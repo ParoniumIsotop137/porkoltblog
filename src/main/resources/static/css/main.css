@@ -1,0 +1,27 @@
+body {
+ 
+ color: white;
+}
+header h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 36px;
+	color: white;
+}
+
+p, address {
+    font-family: 'Calibri', sans-serif;
+	color: white;
+}
+section {
+	color: #ffd966;
+	 font-size: 28px;
+	 font-style: bold;
+	 font-family: 'Exo', segoe-ui-bold;
+	  text-shadow: 2px 2px #000000;
+}
+footer{
+	
+	font-size: 20px;
+}
+
+
