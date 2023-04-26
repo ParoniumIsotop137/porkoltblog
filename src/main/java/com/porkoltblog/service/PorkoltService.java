@@ -20,9 +20,31 @@ public class PorkoltService implements IPorkoltService{
 	}
 
 
-	@Override
+	
 	public Porkolt createPorkolt(Porkolt porkolt) {
 		return pRepo.save(porkolt);
+	}
+
+
+	
+	public Porkolt getPorkolt(Long id) {
+		
+		return pRepo.findById(id).orElseThrow();
+	}
+
+
+
+	public Porkolt updatePorkolt(Porkolt porkolt, Long id) {
+		
+		Porkolt oldRecipe = pRepo.findById(id).orElseThrow();
+		
+		oldRecipe.setId(id);
+		oldRecipe.setIngredients(porkolt.getIngredients());
+		oldRecipe.setName(porkolt.getName());
+		oldRecipe.setRecipe(porkolt.getRecipe());
+		
+		pRepo.save(oldRecipe);
+		return oldRecipe;
 	}
 	
 	
