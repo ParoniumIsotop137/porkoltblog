@@ -30,4 +30,9 @@ public class PorkoltController {
 		return service.getPorkoltek();
 		
 	}
+	
+	public Porkolt createPorkolt(Porkolt porkolt) {
+		return service.createPorkolt(porkolt);
+		
+	}
 }

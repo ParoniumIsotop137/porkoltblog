@@ -18,6 +18,12 @@ public class PorkoltService implements IPorkoltService{
 	
 		return pRepo.findAll();
 	}
+
+
+	@Override
+	public Porkolt createPorkolt(Porkolt porkolt) {
+		return pRepo.save(porkolt);
+	}
 	
 	
 }

@@ -10,5 +10,6 @@ import com.porkoltblog.entity.Porkolt;
 public interface IPorkoltService {
 
 	public List<Porkolt> getPorkoltek();
+	public Porkolt createPorkolt(Porkolt porkolt);
 	
 }
